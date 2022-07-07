@@ -13,7 +13,7 @@ order by [% of all U#S# abortions, by state of occurrence, 2017] desc
 --Sorts States based on what % of women aged 15-44 had and abortion in 2017 and what state the are living in
 select 
 	[U#S# State],
-    [No# of abortions, by state of residence, 2017 (11)] /[Total no# of women aged 15-44, 2017] *100 as '%_Rate_of_abortions'
+	[No# of abortions, by state of residence, 2017 (11)] /[Total no# of women aged 15-44, 2017] *100 as '%_Rate_of_abortions'
 from US_Abortion_Data..Guttmacher_United_States_Data
 order by '%_Rate_of_abortions' desc
 
@@ -41,7 +41,7 @@ ORDER BY [Flow of women into (+) or out of (-) the state for an abortion] DESC
 select 
 	[U#S# State],
 	[% of women aged 18-49 using contraceptives, 2017 (3)],
-    [No# of abortions, by state of residence, 2017 (11)] /[Total no# of women aged 15-44, 2017] *100 as '%_Rate_of_abortions'
+	[No# of abortions, by state of residence, 2017 (11)] /[Total no# of women aged 15-44, 2017] *100 as '%_Rate_of_abortions'
 from US_Abortion_Data..Guttmacher_United_States_Data
 where [% of women aged 18-49 using contraceptives, 2017 (3)] is not null
 order by [% of women aged 18-49 using contraceptives, 2017 (3)] desc
